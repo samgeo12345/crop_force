@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html,body{
+    font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+div.form,div.form1,div.form2{
+    background-color: #ffffffc0;
+    border: 3px solid black; 
+    /* margin-bottom: 10%; */
+    margin-bottom:20cqmin;
+}
+#Contact_us,footer{
+    margin-bottom: 20cqmin;
+}
+#OTP2_button,#Verify2_btn{  /*Button has grey color*/
+    width: 85px;
+    height: 25px;
+    font-size: 15px;
+    padding: 2px;
+    margin: 0;
+    background-color: white;
+    border-radius: 0px;
+    border-color: gray;
+}
+/*
+button {
+    width: 20%;
+    padding: 8px;
+    font-weight:bold;
+    outline:none;
+    border-style:solid;
+    border-color:white;
+    font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(30, 238, 30);
+    border-radius: 40px;
+}
+button:hover {
+    color:white;
+    border-color:rgb(36, 255, 36);
+    background-color: rgb(36, 255, 36);
+}
+button:active {
+    color:white;
+    border-color:rgba(42, 206, 20,0.925);
+    background-color: rgba(42, 206, 20, 0.925);
+}*/
+a{
+    text-decoration: none;
+    font-size:large;
+}
+#reset_button {
+    font-size: 20px;
+    width: 175px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(30, 238, 30);
+    border-radius: 8px;
+}
+#reset_button:hover {
+    font-size: 20px;
+    width: 175px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(36, 255, 36);
+    border-radius: 7px;
+}
+#reset_button:active {
+    font-size: 20px;
+    width: 175px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgba(42, 206, 20, 0.925);
+    border-radius: 7px;
+}
+.otp_disp_msg p{
+    position: absolute;
+    top: 60px;
+    width: max-content;
+    left: 32%;
+    height: 30px;
+    border-radius: 5px;
+}
+.navbar nav{
+    position:fixed;
+    background-color:white;
+    width:100%;
+    padding:0.5% 2%;
+    top:0px;
+    display:flex;
+    justify-content:space-around;
+    /*box-shadow:0px 0px 1px rgba(0,0,0,0.9);*/
+    align-items:center;
+    z-index:2000;
+}
+.navbar nav .logos{
+    width:100%;
+    color:black;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.navbar nav i{
+    color:rgb(4, 189, 4);
+    
+    font-size:xx-large;
+}
+.navbar nav .navoptions{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    text-align:center;
+    width:100%;
+}
+nav .nav_item{
+    color:black;
+    display: block;
+    text-align: center;
+    padding: 6px 0px;
+    text-decoration: none;
+}
+nav .nav_item:hover{
+    color:rgb(4, 189, 4);
+    /* background-color: #0ba1ca; */
+    /*background-color: #039903f5;*/
+    /*box-shadow: 10px 8px 59px 1px #019e01fd;*/
+    transition: 0.5s;
+}
+nav .nav_item:active{
+    box-shadow: 10px 8px 59px 1px #039903fb;
+}
+
+.check:checked {
+    background-color: #2196F3;
+    box-shadow: 0px 0px 2px 2px #2195f3ce;
+}
+nav a{
+    display: block;
+    text-align: center;
+    padding: 10px 80px;
+    text-decoration: none;
+}
+nav a:hover{
+    transition: 0.4s;
+}
+nav a:active{
+    /* box-shadow: 10px 8px 59px 1px #039903fb; */
+    box-shadow: 10px 8px 59px 1px #039903fb;
+}
+.homes{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    padding:7%;
+    background-image:url("wp12740497-summer-green-trees-wallpapers.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+h1{
+    width:100%;
+    text-align:center;
+}
+/*#Contact_btn:active{
+    background-color: #ffffff;
+    font-size: 15px;
+    color: black;
+    height: 35px;
+    width: 130px;
+    padding: 3px;
+    border: 2px solid black;
+}
+*/
+.team_mem{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    width:100%;
+    flex-wrap:wrap;
+}
+figure{
+    text-align:center;
+}
+figure figcaption:nth-child(3){
+    font-weight:bold;
+}
+figure figcaption:nth-child(4){
+    color:rgb(4, 189, 4);
+    padding-bottom:3%;
+}
+figure img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+figure a{
+    font-size:x-large;
+    color:gray;
+}
+/*
+.Team_members{
+    overflow:hidden;
+    width:100%;
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(8px);
+    color: #224;
+    text-align: center;
+    background-color: #f6f4f9c2;
+}
+.Team_members div{
+    width:100%;
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+    display:flex;
+    background-color:red;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    overflow:hidden;
+}
+.Team_members:hover{
+    box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.45);
+}
+figure img {
+    border: 2px solid black;
+}
+*/
+.footerdiv{
+    color: black;
+    width:100%;
+    background-color:rgb(4, 189, 4);
+    /* width: fit-content; */
+    padding-bottom:1%;
+    /* border-radius: 20px; */
+}
+.footerdiv .foot a{
+    font-size:normal;
+}
+.footerdiv .foot .subscribediv{
+    display:flex;
+    border-radius:8px;
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+    overflow:hidden;
+}
+.subscribediv input,.subscribediv button{
+    padding:3%;
+    border:none;
+    outline:none;
+    font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+}
+.subscribediv input{
+    width:70%;
+}.subscribediv button{
+    width:30%;
+    background-color:black;
+    color:white;
+}
+.subscribediv button i{
+    margin:0;
+    padding:0;
+    height:0;
+}
+.social_icon a,.social_icon a:hover,.social_icon a:active, .social_icon_footer a,.social_icon_footer a:hover,.social_icon_footer a:active{
+    color:white;
+}
+.top-padding {
+    background-color: #039903dc;
+    padding-top: 15px;
+}
+
+#get_started{
+    background-color: rgb(4, 189, 4);
+    border-color:rgb(4, 189, 4);
+    font-weight:bold;
+    width:25%;
+    outline:none;
+    padding:1% 5%;
+    color:white;
+    border-radius:40px;
+    font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+    border-style:solid;
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+}
+#get_started:hover{
+    background-color:limegreen;
+    border-color:limegreen;
+}
+#get_started:active{
+    background-color:limegreen;
+    border-color:limegreen;
+}
+div .About_us{
+    margin-top: 100px;
+    width:90%;
+    margin:auto;
+}
+div .About_us hr{
+    border:solid rgb(4, 189, 4);
+    width:30%;
+}
+
+div .About_us .about_contentdiv{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    align-items:center;
+}
+div .About_us .about_contentdiv div{
+    overflow:hidden;
+    display:flex;
+    align-items:left;
+    flex-direction: column;
+}
+div .About_us .about_contentdiv div img{
+    width:100%;
+}
+div .About_us .about_contentdiv div a{
+    color:rgb(4, 189, 4);
+}
+div .About_us h1{
+    text-align:center;
+    margin:auto;
+}
+div .About_us p{
+    text-align:left;
+    margin:auto;
+}
+div .About_us button{
+    width:40%;
+    padding:2%;
+    color:white;
+    border-radius:8px;
+    font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(4, 189, 4);
+    border:solid rgb(4, 189, 4);
+}
+#team hr,.con_us hr{
+    width:30%;
+    border:solid rgb(4, 189, 4);
+}
+.table_contents{
+    width:90%;
+    margin:auto;
+    padding-bottom:6%;
+    display:flex;
+    justify-content:center;
+    align-items:left;
+}
+.table_contents div{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    width:100%;
+}
+.table_contents div:nth-child(2){
+    align-items:center;
+    text-align:center;
+}
+.table_contents form {
+    width:90%;
+    overflow:hidden;
+}
+.table_contents p{
+    margin-top:0.5%;
+    padding:0;
+}
+.table_contents span{
+    font-weight:bold;
+}
+.table_contents a{
+    font-size:medium;
+    color:rgb(4, 189, 4);
+}
+.table_contents form table{
+    text-align:center;
+    width:100%;
+    margin:auto;
+}
+.table_contents form table input,
+.table_contents form table textarea{
+    border-radius:8px;
+    outline:none;
+    border:none;
+    margin-top:3%;
+    padding:3%;
+    width:60%;
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+    font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+}
+.table_contents form table input::placeholder,
+.table_contents form table textarea::placeholder{
+    font-size:normal;
+}
+#Contact_btn{
+    background-color:rgb(4, 189, 4);
+    color:white;
+    width: 40%;
+    margin-top:1%;
+    font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+    padding:2%;
+    border-radius:8px;
+    border: solid rgb(4, 189, 4);
+}
+
+
+@media(max-width:850px){
+    .table_contents form table input,
+    .table_contents form table textarea{
+        width:70%;
+    }
+    #Contact_btn{
+        width:45%;
+    }
+}
+@media(max-width:750px){
+    .table_contents{
+        flex-wrap:wrap;
+    }
+    .table_contents div{
+        align-items: center;
+        text-align:center;
+    }
+}
+@media(max-width:700px){
+    .about_contentdiv{
+        flex-wrap:wrap;
+    }
+    .navoptions{
+        position:fixed;
+        bottom:0;
+        left:0;
+        padding-top:4%;
+        padding-bottom:4%;
+        background-color:white;
+    }
+    #get_started{
+        width:40%;
+        padding:2% 6%;
+    }
+    .foot_above{
+        flex-direction:column;
+    }
+    .footerdiv{
+        padding-bottom:20%;
+    }
+    #lastfootlabel{
+        margin-top:3%;
+    }
+    .up_arrow{
+        bottom: 13%;
+    }
+}
+@media(max-width:600px){
+    .homes{
+        height:100vh;
+    }
+    #get_started{
+        width:50%;
+        padding:2% 5%;
+    }
+}
+@media(max-width:530px){
+    .top_text{
+        font-size:50px;
+        margin-top:30%;
+    }
+}
+@media(max-width:450px){
+    .table_contents form table input,
+    .table_contents form table textarea{
+        width:80%;
+    }
+    #Contact_btn{
+        width:50%;
+    }
+    .top_text{
+        font-size:50px;
+        margin-top:40%;
+    }
+    .footerdiv{
+        padding-bottom:25%;
+    }
+}
+@media(max-width:380px){
+    .table_contents form table input,
+    .table_contents form table textarea{
+        width:90%;
+    }
+    #Contact_btn{
+        width:60%;
+    }
+    .top_text{
+        font-size:45px;
+        margin-top:55%;
+    }
+    #get_started{
+        width:55%;
+        padding:3% 6%;
+    }
+}

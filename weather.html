@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script src="functions1.js"></script>
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="back_home" title="Go to Dashboard">
+        <a href="dashboard.html"><i class="fa-solid fa-user fa-xl" style="color: #ffffff;margin-top: 20px;"></i>
+            <h1 style="margin-top: 5px;margin-left: 13px;">Dashboard</h1></a>
+    </div>
+    <div id="loader" class="loader">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+        <div class="bar7"></div>
+        <div class="bar8"></div>
+        <div class="bar9"></div>
+        <div class="bar10"></div>
+        <div class="bar11"></div>
+        <div class="bar12"></div>
+    </div>
+<div id="content" style="display: none;">
+    <div id="weather">
+        <h2>Weather Information</h2>
+        <h3 id="location">Location: Loading...</h3>
+        <p id="temperature">Temperature: Loading...</p>
+        <p id="pressure">Pressure: Loading...</p>
+        <p id="humidity">Humidity: Loading...</p>
+        <p id="fog">Fog: Loading...</p>
+        <p id="rain">Rain Possibility: Loading...</p>
+        <p id="sunny">Sunny: Loading...</p>
+        <p id="weatherDescription">Weather: Loading...</p>
+        <div id="clock">Current time:</div>
+    </div>
+</body>
+</html>

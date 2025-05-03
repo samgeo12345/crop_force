@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script src="functions.js"></script>
+    <script src="functions1.js"></script>
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+<body >
+    <div class="back_home">
+        <a href="index.html"><i class="fa-solid fa-house fa-xl" style="color: white;margin-top: 20px;"></i>
+            <h1 style="margin-top: -5px;">Back to Home</h1></a>
+    </div>
+    <center>
+    <div id="loader" class="loader">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+        <div class="bar7"></div>
+        <div class="bar8"></div>
+        <div class="bar9"></div>
+        <div class="bar10"></div>
+        <div class="bar11"></div>
+        <div class="bar12"></div>
+    </div>
+<div id="content" style="display: none;">
+    <div class="form2">
+        <form action="login.html" method="" onsubmit="reset_alert()">
+            <fieldset class="form2">
+                <legend>Forgot Password</legend>
+                <table>
+                    <tr>
+                        <td><label for="phone">Phone number</label></td>
+                        <td>
+                            <input type="text" name="" class="table_2" id="Phone_number" maxlength="10" pattern="\d{10}"  placeholder="10 digits mobile number" title="Mobile number" required></td>
+                            <tr>
+                                <td></td>
+                                <td><button type="button" title="Send OTP" id="OTP2_button" class="OTP_button" style="margin-left: 85px;" onclick="OTP_send()">Send OTP</button></td>
+                            </tr>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="text" name="" id="OTP_in" title="Enter OTP" maxlength="6" pattern="\d{6}" class="table_2" placeholder="Enter the OTP received" disabled required></td>
+                        <tr>
+                            <td></td>
+                        <td><button type="button" title="Verify OTP" style="margin-left: 85px;cursor: not-allowed;" id="Verify2_btn" onclick="validate_OTP()" disabled>Verify OTP</button></td>
+                    </tr>
+                </table>
+                <p id="disp_message" style="margin-left: 25px;margin-bottom: 15px;"></p>
+                <table>
+                        <td><label for="password">New Password</label></td>
+                            <td><input type="password" name="" id="Password" class="pass" title="Enter new Password" placeholder="Enter new Password" disabled required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="confirm_passsword">Confirm new Password</label></td>
+                            <td><input type="password" name="" class="pass"  id="confirm_passsword" title="Confirm your password" placeholder="Enter Password again" oninput="match_pass()" disabled required></td>
+                        </tr>
+                        <tr>
+                            <td><input class="check" type="checkbox" name="" id="show_password" title="Show Password" onclick="show_pass()">
+                                <label class="check" for="show_password" title="Show Password" style="margin-left: 5px;user-select: none;">Show Password</label></td>
+                        </tr>
+                </table>
+                <p id="pass_message" style="margin-left: 25px;"></p><br>
+                <center>
+                    <button id="reset_button" type="submit" title="Reset Password">Reset Password</button><br><br>
+                    <label>Back to</label>
+                    <a href="login.html" title="Login to your account">Login</a>
+                </center>
+            </fieldset>
+        </form>
+    </div> 
+    <div class="otp_disp_msg">
+        <center><p class="otp" id="Otp_disp"></p></center>
+    </div>  
+</center>
+</body>
+</html>

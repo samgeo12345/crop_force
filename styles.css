@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html,body{
+    font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+body {
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+div.form,div.form1,div.form2,#Contact_us { /*Div and forms in reg, login, forgot*/
+    position: relative;
+    top: 25px;
+    width: max-content;
+    max-width: 470px;
+    padding: 10px;
+    margin: 25px auto;
+    margin-bottom: -250px;
+    border-radius: 15px; 
+}
+fieldset,fieldset.form1,fieldset.form2 { /*Box like border in forms*/
+    border-radius: 10px;
+    width: 97%;
+    padding: 5px;
+}
+
+h1{
+    width: 660px;
+    padding: 10px;
+}
+select {
+    height: 25px;
+    width: 215px;
+}
+.Gender{
+    margin-left: 0px;
+}
+.tab_2{
+    margin-left: 20px;
+}
+.table_1{
+    margin-left: 67px;
+}
+:disabled{
+    cursor: not-allowed;
+}
+
+.Gender,.State,button:hover {
+    cursor: pointer;
+}
+.pass{
+    margin-left: 15px;
+}
+
+#Contact_us{
+    max-width: 400px;
+    margin-top: 40px; 
+}
+
+/*
+div .team_mem{
+    display: flex;
+    margin: 1%;
+}
+.Team_members {
+    display: flex;
+    width: 305px;
+    font-weight: 20px;
+    padding: 18px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 15px;
+}
+.team_mem {
+    margin-left: 4px;
+}
+.Team_members figure {
+    margin-left: -30px;
+}
+*/
+legend{
+    text-align: center;
+    font-size: 25px;
+}
+.table_2{
+    margin-left: 85px;
+}
+/*
+p{
+    font-size: 20px;
+}
+*/
+a:hover, a:active{
+    cursor: pointer;
+}
+label {
+    font-size: 20px;
+}
+.check {
+    width: 10px;
+    height: 10px;
+    transform: scale(2);
+    cursor: pointer;
+    margin-left: 15px;
+    transition: all 1 ease ;
+}
+
+table{
+    border-spacing: 8px;
+}
+pre {
+    font-size: 20px;
+    margin-left: -20px;
+    text-align: left;
+}
+i{
+    margin-top: 300px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+i:hover {
+    cursor: pointer;
+}
+/*
+.Team_members i{
+    display: inline-flex;
+}
+*/
+div .social_icon_footer{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.top_text {
+    margin-top:10%;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.blinking-dots {
+    animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.back_home{
+    max-width: 250px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.back_home a{
+    display: flex;
+}
+.back_home i{
+    margin-top: 25px;
+}
+.back_home h1{
+    font-size: 28px;
+}
+/*
+.Team_member_title {
+    font-size: 70px;
+    cursor: default;
+}
+*/
+.foot_above{
+    display:flex;
+    flex-wrap:wrap;
+    color:white;
+    padding-top:4%;
+    padding-bottom:4%;
+    justify-content:space-evenly;
+    align-items:center;
+    text-align:center;
+}
+/*
+footer div {
+    width:100%;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+*/
+.up_arrow {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.up_arrow i {
+    font-size: 3em;
+}
+.Logo {
+    display: flex;
+}
