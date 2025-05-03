@@ -468,11 +468,15 @@ div .About_us button{
     #Contact_btn{
         padding:3%;
     }
+    
 }
 @media(max-width:530px){
     .top_text{
         font-size:50px;
         margin-top:30%;
+    }
+    div .About_us button{
+        padding:3%;
     }
 }
 @media(max-width:450px){
@@ -501,6 +505,9 @@ div .About_us button{
     }
     #Contact_btn{
         width:60%;
+    }
+    div .About_us button{
+        padding:3.5%;
     }
     .top_text{
         font-size:45px;
