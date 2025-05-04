@@ -192,13 +192,19 @@ footer div {
     position: fixed;
     bottom: 50px;
     right: 30px;
-    display: none; /* Hidden by default */
+    display: none;
+    padding-top:2%;
+    padding-bottom:2%; /* Hidden by default */
     cursor: pointer;
+    overflow:hidden;
+    align-items:center;
     z-index: 1000;
 }
 
 .up_arrow i {
     font-size: 3em;
+    width:100%;
+    height:auto;
 }
 .Logo {
     display: flex;

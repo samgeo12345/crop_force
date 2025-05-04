@@ -418,6 +418,10 @@ div .About_us button{
     #Contact_btn{
         width:45%;
     }
+    .up_arrow{
+        padding-top:3%;
+        padding-bottom:2%;
+    }
 }
 @media(max-width:750px){
     .table_contents{
@@ -468,7 +472,10 @@ div .About_us button{
     #Contact_btn{
         padding:3%;
     }
-    
+    .up_arrow{
+        padding-top:4.5%;
+        padding-bottom:2.5%;
+    }
 }
 @media(max-width:530px){
     .top_text{
@@ -521,5 +528,9 @@ div .About_us button{
     #get_started{
         width:55%;
         padding:3% 6%;
+    }
+    .up_arrow{
+        padding-top:5%;
+        padding-bottom:3%;
     }
 }
