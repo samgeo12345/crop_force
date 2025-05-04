@@ -13,13 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
 </head>
-<body>
-    <div class="back_home">
-        <a href="index.html"><i class="fa-solid fa-house fa-xl" style="color: white;margin-top: 20px;"></i>
-            <h1 style="margin-top: -5px;">Back to Home</h1></a>
-    </div>
-    <center>
-    <div id="loader" class="loader">
+<body style="height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background-image:url('kDAaKYD-spring-wallpapers.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;">
+    <a class="backs_home" href="index.html">< Back to Home</a>
+   <!-- <div id="loader" class="loader">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -32,35 +28,33 @@
         <div class="bar10"></div>
         <div class="bar11"></div>
         <div class="bar12"></div>
+    </div>-->
+<div id="content">
+    <div class="welcomelogindiv">
+    <h1><i class="fas fa-leaf"></i>Crop Force</h1>
+    <p>Login to become a member of our website.</p>
     </div>
-<div id="content" style="display: none;">
-    <div class="form1" style="margin-top: 8%;">
-        <form id="login" action="" method="" onsubmit="dashboard_open(event)">
-            <fieldset class="form1">
-                <legend>Login</legend>
-                <table>
-                    <tr>
-                        <td><label for="phone">Phone number</label></td>
-                        <td>
-                            <input type="text" name="" id="" maxlength="10" pattern="\d{10}" style="width: 200px;" placeholder="10 digits mobile number" title="Mobile number" required></td>
-                    <tr>
-                        <td><label for="password">Password</label></td>
-                        <td> <input type="password" name="" id="password" style="width: 200px;" title="Enter your Password" placeholder="Enter Your Password" required></td>
-                    </tr>
-                    <tr>
-                        <td><input class="check" type="checkbox" name="" id="show_pass" onclick="show_password()">
-                            <label class="check" for="show_pass" style="margin-left: 5px;user-select: none;" title="Show Password">Show Password</label></td>
-                        <td><a href="forgot.html" style="margin-left: 75px;" title="Recover your Password">Forgot Password ?</a></td>
-                    </tr>
-                </table>
-                <center>
-                    <button type="submit" title="Login to your Account">Sign In</button><br><br>
-                    <label for="">Don't have an account?</label>
-                    <a href="registration.html" title="Create an account">Sign Up</a>
-                </center>
-            </fieldset>
-        </form>
-    </div>
-</center>
+    <div class="logindiv">
+    <form id="login" action="" method="" onsubmit="dashboard_open(event)">
+        <div class="formcontents">
+            <h1>Login</h1>
+            <input type="text" name="" id="" maxlength="10" pattern="\d{10}" placeholder="Mobile Number 10 Digits" title="Mobile number" required>
+            <input type="password" name="" id="password" title="Enter your Password" placeholder="Enter Your Password" required>
+            <div class="for_check_contents" style="display:inline-flex;justify-content: space-between;width:100%;">
+                <label for="show_pass" style="user-select: none;" title="Show Password">
+                    <input class="check" type="checkbox" name="Show password" id="show_pass" onclick="show_password()">
+                    Show Password
+                </label>
+                <a href="forgot.html" title="Recover your Password">Forgot Password?</a>
+            </div>
+            <button type="submit" title="Login to your Account">Sign In</button>
+            <div class="dont_have_accdiv">
+            <label for="">Don't have an account?</label>
+            <a href="registration.html" title="Create an account">Sign Up</a>
+            </div>
+        </div>
+     </form>
+     </div>
+</div>
 </body>
 </html>

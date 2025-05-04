@@ -4,9 +4,6 @@ html,body{
     overflow-x:hidden;
     scroll-behavior:smooth;
 }
-div h1{
-    margin-left: 3%;
-}
 .items,.container{
     display: flex;
     margin-top: 50px;
