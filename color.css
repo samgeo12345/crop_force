@@ -448,7 +448,11 @@ div .About_us button{
         left:0;
         padding-top:4%;
         padding-bottom:4%;
-        background-color:white;
+        backdrop-filter:blur(8px);
+        background-color:rgba(0,0,0,0.3);
+    }
+    .navoptions a{
+        color:white;
     }
     #get_started{
         width:40%;
