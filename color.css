@@ -478,6 +478,10 @@ div .About_us button{
     div .About_us button{
         padding:3%;
     }
+    .table_contents form table input,
+    .table_contents form table textarea{
+        padding:4%;
+    }
 }
 @media(max-width:450px){
     .table_contents form table input,
@@ -502,6 +506,7 @@ div .About_us button{
     .table_contents form table input,
     .table_contents form table textarea{
         width:90%;
+        padding:4.5%;
     }
     #Contact_btn{
         width:60%;
