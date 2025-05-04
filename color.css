@@ -199,6 +199,12 @@ figure a{
     font-size:x-large;
     color:gray;
 }
+#About_us,#Team_members,#Contact_Us{
+    color:white;
+}
+#About_us hr,#Team_members hr,#Contact_Us hr{
+    border:white;
+}
 /*
 .Team_members{
     overflow:hidden;
