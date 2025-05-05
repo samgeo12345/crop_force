@@ -96,7 +96,6 @@ a{
 }
 .navbar nav i{
     color:rgb(4, 189, 4);
-    
     font-size:xx-large;
 }
 .navbar nav .navoptions{
@@ -110,20 +109,24 @@ a{
 nav .nav_item{
     color:black;
     display: block;
+    font-weight:bold;
     text-align: center;
     padding: 6px 0px;
     text-decoration: none;
+    transition:none;
 }
 nav .nav_item:hover{
     color:rgb(4, 189, 4);
     /* background-color: #0ba1ca; */
     /*background-color: #039903f5;*/
     /*box-shadow: 10px 8px 59px 1px #019e01fd;*/
-    transition: 0.5s;
+    /*transition: 0.5s;*/
 }
+/*
 nav .nav_item:active{
     box-shadow: 10px 8px 59px 1px #039903fb;
 }
+*/
 /*
 .check:checked {
     background-color: #2196F3;
@@ -136,18 +139,21 @@ nav a{
     padding: 10px 80px;
     text-decoration: none;
 }
+/*
 nav a:hover{
     transition: 0.4s;
 }
 nav a:active{
-    /* box-shadow: 10px 8px 59px 1px #039903fb; */
+    box-shadow: 10px 8px 59px 1px #039903fb;
     box-shadow: 10px 8px 59px 1px #039903fb;
 }
+*/
 .homes{
     display:flex;
     align-items:center;
     flex-direction:column;
     padding:7%;
+    height:100vh;
     background-image:url("wp12740497-summer-green-trees-wallpapers.jpg");
     background-repeat:no-repeat;
     background-size:cover;
