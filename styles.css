@@ -9,6 +9,24 @@ body {
     padding: 0;
     user-select: none;
 }
+.body_login_register{
+    height:100vh;
+    display:flex;
+    overflow-y:scroll;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-image:url('kDAaKYD-spring-wallpapers.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.body_login_register2{
+    background-image:url('kDAaKYD-spring-wallpapers.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
 .backs_home{
     position:fixed;
     top:2%;
@@ -20,8 +38,14 @@ body {
     width:70%;
     margin:auto;
     display:flex;
-    justify-content: center;
+    justify-content:center;
     height:auto;
+}
+#content2{
+    width:50%;
+    margin:auto;
+    margin-top:2%;
+    margin-bottom:2%;
 }
 .welcomelogindiv{
     width:100%;
@@ -34,7 +58,7 @@ body {
     background-color:rgb(4,189,4);
     align-items: center;
 }
-.logindiv{
+.logindiv,.form{
     width:100%;
     display:flex;
     justify-content:center;
@@ -44,8 +68,49 @@ body {
     /*backdrop-filter:blur(8px);*/
     align-items: center;
 }
+.form{
+    width:80%;
+    padding:10%;
+    overflow:hidden;
+}
+.logintolabel{
+    display:flex;
+    justify-content: center;
+}
+.logintolabel a{
+    font-size:medium;
+    color:rgb(4,189,4);
+}
+.Gender{
+    display:flex;
+    gap:5px;
+    margin-top:4%;
+    align-items:center;
+}
+.genders{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+#male,#female,#others{
+    width:auto;
+    margin:0;
+    width:18px;
+    height:18px;
+}
+#male[type="radio"],#female[type="radio"],#others[type="radio"]{
+    accent-color:rgb(4,189,4);
+}
+select {
+    padding:2.5%;
+    outline:none;
+    margin-top:4%;
+    background-color:whitesmoke;
+    width:100%;
+    font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+}
 .logindiv form{
-    width:90%;
+    width:100%;
 }
 .formcontents{
     display:flex;
@@ -55,16 +120,24 @@ body {
     flex-direction:column;
     align-items:center;
 }
-.formcontents h1{
+.formcontents h1,.form h1{
     color:rgb(4,189,4);
 }
-.formcontents input,.formcontents button{
+.formcontents input,.formcontents button,
+.form button{
     width:100%;
     padding:2.5%;
     font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
     outline:none;
 }
-.formcontents input{
+.form input{
+    font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+    width:100%;
+    outline:none;
+    margin-top:4%;
+    padding:2.5% 0%;
+}
+.formcontents input,.form input{
     background-color:transparent;
     border-bottom-style:solid;
     border-top-style:none;
@@ -72,7 +145,7 @@ body {
     border-right-style:none;
     border-color:gray;
 }
-.formcontents button{
+.formcontents button,.form button{
     font-weight:bold;
     background-color:rgb(4,189,4);
     border:none;
@@ -101,19 +174,7 @@ fieldset.form1,fieldset.form2 { Box like border in forms
     padding: 5px;
 }
 */
-select {
-    height: 25px;
-    width: 215px;
-}
-.Gender{
-    margin-left: 0px;
-}
-.tab_2{
-    margin-left: 20px;
-}
-.table_1{
-    margin-left: 67px;
-}
+
 :disabled{
     cursor: not-allowed;
 }
@@ -121,9 +182,7 @@ select {
 .Gender,.State,button:hover {
     cursor: pointer;
 }
-.pass{
-    margin-left: 15px;
-}
+
 
 #Contact_us{
     max-width: 400px;
@@ -154,9 +213,6 @@ div .team_mem{
 legend{
     text-align: center;
     font-size: 25px;
-}
-.table_2{
-    margin-left: 85px;
 }
 /*
 p{

@@ -12,13 +12,9 @@
     <script src="functions1.js"></script>
     <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
 </head>
-<body>
-    <div class="back_home">
-        <a href="index.html"><i class="fa-solid fa-house fa-xl" style="color: white;margin-top: 20px;"></i>
-            <h1 style="margin-top: -5px;">Back to Home</h1></a>
-    </div>
-    <center>
-    <div id="loader" class="loader">
+<body class="body_login_register2">
+    <a class="backs_home" href="index.html">< Home</a>
+    <!--<div id="loader" class="loader">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -31,37 +27,29 @@
         <div class="bar10"></div>
         <div class="bar11"></div>
         <div class="bar12"></div>
-    </div>
-<div id="content" style="display: none;">
-    <div class="form" style="margin-top: -75px;">
+    </div>-->
+<div id="content2">
+    <div class="form">
         <form id="registration" name="registration" class="registration" action="" method="" onsubmit="submit_Alert(); Login_open(event); return false;">
-            <fieldset>
-                <legend>Registration</legend>
-                <table>
-                    <tr>
-                        <td><label for="f_name">First name</label></td>
-                        <td><input type="text" name="" class="tab_2" id="f_name" placeholder="Enter your First name" class="table_1" title="Enter First name"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="l_name">Last name</label></td>
-                        <td><input type="text" name="" id="" class="tab_2" placeholder="Enter your Last name" class="table_1" title="Enter Last name" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="dob">Date of Birth</label></td>
-                        <td><input type="date" name="" id="" class="tab_2" title="Date of Birth" style="width: 170px;" class="table_1" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Gender" style="margin-left: 10px;">Gender</label></td>
-                        <td><input type="radio" class="Gender" name="Gender" id="male" style="margin-left: -40px" title="Select Gender" required>
-                            <label for="male" class="Gender" title="Select Gender">Male</label>
-                            <input type="radio" class="Gender" name="Gender" id="female" title="Select Gender" style="margin-left: 10px;" required>
-                            <label for="female" class="Gender" title="Select Gender">Female</label>
-                            <input type="radio" class="Gender" name="Gender" id="others" title="Select Gender" style="margin-left: 10px;" required>
-                            <label for="others" class="Gender">Others</label></td>
-                    </tr>
-                    <tr>
-                        <td><label for="state">State</label></td>
-                        <td><select name="state" class="State" id="State" style="margin-left: 19px;height: 28px;width: 175px;" title="Select the state" required>
+            <h1>Registration</h1>
+            <input type="text" name="" id="f_name" placeholder="Enter your First name" title="Enter First name" required>
+            <input type="text" name="" id="" placeholder="Enter your Last name" title="Enter Last name" required>
+            <input type="date" name="" id="" title="Date of Birth" required>
+            <div class="genders">
+            <label for="male" class="Gender" title="Select Gender">
+                <input type="radio" name="Gender" id="male" title="Select Gender" required>
+                Male
+            </label>
+            <label for="female" class="Gender" title="Select Gender">
+                <input type="radio" name="Gender" id="female" title="Select Gender" required>
+                Female
+            </label>
+            <label for="others" class="Gender">
+                <input type="radio" name="Gender" id="others" title="Select Gender" required>
+                Others
+            </label>
+            </div>
+            <select name="state" class="State" id="State" title="Select the state" required>
                             <option value="">Select your State</option>
                             <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                             <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -99,36 +87,24 @@
                             <option value="Uttar Pradesh">Uttar Pradesh</option>
                             <option value="Uttarakhand">Uttarakhand</option>
                             <option value="West Bengal">West Bengal</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                        <td><label for="phone">Phone number</label></td>
-                        <td>
-                            <input type="text" name="" id="" class="tab_2" maxlength="10" pattern="\d{10}" placeholder="10 digits mobile number" title="Mobile number" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="password">Password</label></td>
-                            <td><input type="password" name=""  id="Password" class="tab_2" title="Enter your Password" placeholder="Create new Password" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="confirm_passsword">Confirm Password</label></td>
-                            <td><input type="password" name=""  id="confirm_passsword" class="tab_2" title="Confirm your password" placeholder="Confirm new Password" oninput="match_password()" required></td>
-                        </tr>
-                        <tr>
-                            <td><input class="check" type="checkbox" name="" id="show_password" title="Show Password" onclick="show_pass()">
-                                <label class="check" for="show_password" style="margin-left: 5px;user-select: none;" title="Show Password">Show Password</label></td>
-                        </tr>
-                </table>
-                <p id="pass_message" style="margin-left: 25px"></p><br> 
-                <center>
-                <button type="submit" id="button" title="Create an account">Sign Up</button><br><br>
-                <label for="">Already have an account?</label>
+            </select>
+            <input type="text" name="" id="" class="tab_2" maxlength="10" pattern="\d{10}" placeholder="10 digits mobile number" title="Mobile number" required>
+            <input type="password" name=""  id="Password" class="tab_2" title="Enter your Password" placeholder="Create new Password" required>
+            <input type="password" name=""  id="confirm_passsword" class="tab_2" title="Confirm your password" placeholder="Confirm new Password" oninput="match_password()" required><br>
+            <label for="show_password" style="user-select: none;font-size:small;" title="Show Password">
+                <input style="width:auto;" class="check" type="checkbox" name="" id="show_password" title="Show Password" onclick="show_pass()">
+                Show Password
+            </label>
+            <p id="pass_message"></p><br> 
+            <button type="submit" id="button" title="Create an account">Sign Up</button><br><br>
+            <div class="logintolabel">
+            <label for="">
+                Already have an account?
                 <a href="login.html" title="Login to your account">Login here</a>
-            </center>
-            </fieldset>
+            </label>
+            </div>
         </form>
     </div> 
 </div>
-</center>
 </body>
 </html>
