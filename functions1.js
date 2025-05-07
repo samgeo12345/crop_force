@@ -51,7 +51,19 @@ if (window.scrollY > 300) { // When scrolls more than 300px from the top icon sh
 upArrow.addEventListener("click", function() {
 window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+});
 
+//navbar changes color
+document.addEventListener("DOMContentLoaded", function() {
+    const navs = document.getElementById("navs");
+    // Add a scroll event listener
+    window.addEventListener("scroll", function() {
+    if (window.scrollY > 50) { // When scrolls more than 300px from the top icon shows
+        navs.style.backgroundColor= "rgb(4,189,4)"; 
+    } else {
+        navs.style.backgroundColor = "transparent"; 
+    }
+    }); 
 });
 
 

@@ -77,7 +77,6 @@ a{
 }
 .navbar nav{
     position:fixed;
-    background-color:rgb(4,189,4);
     width:100%;
     padding:0.5% 2%;
     top:0px;
@@ -86,6 +85,7 @@ a{
     /*box-shadow:0px 0px 1px rgba(0,0,0,0.9);*/
     align-items:center;
     z-index:2000;
+    transition:.3s ease-in-out;
 }
 .navbar nav .logos{
     width:100%;
@@ -111,20 +111,20 @@ a{
 nav .nav_item{
     color:white;
     display: block;
-    font-weight:bold;
     text-align: center;
     padding: 6px 0px;
     text-decoration: none;
     transition:none;
 }
+/*
 nav .nav_item:hover{
-    background-color:white;
     color:rgb(4, 189, 4);
-    /* background-color: #0ba1ca; */
-    /*background-color: #039903f5;*/
-    /*box-shadow: 10px 8px 59px 1px #019e01fd;*/
-    /*transition: 0.5s;*/
+    background-color: #0ba1ca; 
+    background-color: #039903f5;
+    box-shadow: 10px 8px 59px 1px #019e01fd;
+    transition: 0.5s;
 }
+*/
 /*
 nav .nav_item:active{
     box-shadow: 10px 8px 59px 1px #039903fb;
