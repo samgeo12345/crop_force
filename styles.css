@@ -110,7 +110,7 @@ select {
     font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
 }
 .logindiv form{
-    width:100%;
+    width:90%;
 }
 .formcontents{
     display:flex;
@@ -355,11 +355,20 @@ footer div {
         width:60%;
         flex-wrap:wrap;
     }
+    #content2{
+        width:60%;
+    }
 }
 @media(max-width:600px){
     #content{
         width:70%;
         flex-wrap:wrap;
+    }
+    #content2{
+        width:68%;
+    }
+    .form button{
+        padding:3%;
     }
     .formcontents button{
         padding:3.5%;
@@ -370,10 +379,20 @@ footer div {
         width:80%;
         flex-wrap:wrap;
     }
+    #content2{
+        margin:0;
+        width:100%;
+    }
+    .form button{
+        padding:4%;
+    }
+    .body_login_register2 .backs_home{
+        color:black;
+    }
 }
 @media(max-width:450px){
     #content{
-        width:90%;
+        width:100%;
         flex-wrap:wrap;
     }
 }
