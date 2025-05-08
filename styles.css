@@ -367,7 +367,7 @@ footer div {
     #content2{
         width:68%;
     }
-    .form button{
+    .form button,.form2 button{
         padding:3%;
     }
     .formcontents button{
@@ -383,7 +383,7 @@ footer div {
         margin:0;
         width:100%;
     }
-    .form button{
+    .form button,.form2 button{
         padding:4%;
     }
     .body_login_register2 .backs_home{
