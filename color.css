@@ -7,7 +7,8 @@ html,body{
 #Contact_us,footer{
     margin-bottom: 20cqmin;
 }
-#OTP2_button,#Verify2_btn{  /*Button has grey color*/
+/*
+#OTP2_button,#Verify2_btn{
     width: 85px;
     height: 25px;
     font-size: 15px;
@@ -17,7 +18,6 @@ html,body{
     border-radius: 0px;
     border-color: gray;
 }
-/*
 button {
     width: 20%;
     padding: 8px;
@@ -43,6 +43,7 @@ a{
     text-decoration: none;
     font-size:large;
 }
+/*
 #reset_button {
     font-size: 20px;
     width: 175px;
@@ -67,6 +68,7 @@ a{
     background-color: rgba(42, 206, 20, 0.925);
     border-radius: 7px;
 }
+*/
 .otp_disp_msg p{
     position: absolute;
     top: 60px;

@@ -58,7 +58,7 @@ body {
     background-color:rgb(4,189,4);
     align-items: center;
 }
-.logindiv,.form{
+.logindiv,.form,.form2{
     width:100%;
     display:flex;
     justify-content:center;
@@ -68,14 +68,14 @@ body {
     /*backdrop-filter:blur(8px);*/
     align-items: center;
 }
-.form{
+.form,.form2{
     width:80%;
     padding:10%;
     overflow:hidden;
 }
 .logintolabel{
     display:flex;
-    justify-content: center;
+    justify-content:center;
 }
 .logintolabel a{
     font-size:medium;
@@ -109,7 +109,7 @@ select {
     width:100%;
     font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
 }
-.logindiv form{
+.logindiv form,.form2 form{
     width:90%;
 }
 .formcontents{
@@ -120,24 +120,24 @@ select {
     flex-direction:column;
     align-items:center;
 }
-.formcontents h1,.form h1{
+.formcontents h1,.form h1,.form2 h1{
     color:rgb(4,189,4);
 }
 .formcontents input,.formcontents button,
-.form button{
+.form button,.form2 button{
     width:100%;
     padding:2.5%;
     font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
     outline:none;
 }
-.form input{
+.form input,.form2 input{
     font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
     width:100%;
     outline:none;
     margin-top:4%;
     padding:2.5% 0%;
 }
-.formcontents input,.form input{
+.formcontents input,.form input,.form2 input{
     background-color:transparent;
     border-bottom-style:solid;
     border-top-style:none;
@@ -145,7 +145,7 @@ select {
     border-right-style:none;
     border-color:gray;
 }
-.formcontents button,.form button{
+.formcontents button,.form button,.form2 button{
     font-weight:bold;
     background-color:rgb(4,189,4);
     border:none;
