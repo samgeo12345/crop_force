@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="weather.css">
     <link rel="stylesheet" href="dashboard.css">
     <script src="functions1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="leaficon.png" type="image/x-icon">
 </head>
-<body>
-    <div class="go_home" title="Log out" onclick="logout()">
-        <span><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: white;margin-top: 20px;"></i>
-        <h1>Log out</h1></span>
-    </div>
+<body class="bodydashboard">
     <!-- <div id="loader" class="loader">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -31,14 +25,30 @@
         <div class="bar12"></div>
     </div>
 <div id="content" style="display: none;"> -->
-    <div>
-        <h1 class="top_text" style="cursor: default;font-size: 75px;user-select: none;">Welcome user</h1>
+<div class="dashboardsetdiv">
+    <div class="sidedbardiv">
+        <figure>
+            <i class="fas fa-user-circle"></i>
+            <figcaption style="cursor:default;user-select: none;">User</figcaption>
+        </figure>
+        <hr>
+        <p><i class="fas fa-table-columns"></i> Dashboard</p>
+        <p><i class="fas fa-seedling"></i> My Plants</p>
+        <p><i class="fas fa-shield-heart"></i> Plant Health Tips</p>
+        <p><i class="fas fa-book-open-reader"></i> Crop Guide</p>
+        <p><i class="fas fa-gear"></i> Settings</p>
+        <p style="padding:1% 5%;border-radius:5px;background-color:white;color:rgb(4,189,4);" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i> Logout</p>
     </div>
-        <div class="container">
-            <div class="items">
-                <a href="weather.html"><i class="fa-solid fa-cloud fa-xl" style="color: #ffffff;"></i><h1 style="margin-top: -35px;margin-left: 50px;">Weather</h1></a>
+    <div class="maindashdiv">
+        <div class="dashboardcontents">
+            <h1 style="color:silver;">Dashboard</h1>
+            <div>
+                <h2><i class="fa-solid fa-cloud"></i> Weather</h2>
+                <p>day to day weather updates are shown here.</p>
+                <a href="weather.html">view details></a>
             </div>
         </div>
+    </div>
 </div>
 </body>
 </html>
