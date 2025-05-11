@@ -22,6 +22,12 @@ html,.bodydashboard{
     color:white;
     background:linear-gradient(135deg,rgb(4,189,4),limegreen);
 }
+#barss{
+    display:none;
+}
+#closebarss{
+    display:none;
+}
 .sidedbardiv hr{
     border:1px solid white;
     width:100%;
@@ -30,15 +36,19 @@ html,.bodydashboard{
     cursor:pointer;
 }
 .maindashdiv{
-    display:flex;
-    justify-content:left;
-    flex-wrap:wrap;
     padding:0% 2%;
+    overflow-y:scroll;
     width:80%;
     background-color:whitesmoke;
 }
+.dashboardcontents{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+}
 .dashboardcontents div{
-    padding:5%;
+    padding:3%;
+    width:100%;
     border-radius:10px;
     background-color:white;
     box-shadow:0px 0px 10px rgba(0,0,0,0.3);
@@ -57,7 +67,18 @@ html,.bodydashboard{
 .dashboardcontents div a{
     text-decoration:none;
 }
+.Rs{
+    color:black;
+    font-weight:bold;
+    font-size:large;
+}
+.subscribes{
+    color:red !important;
+}
 .sidedbardiv figure{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
     width:100%;
     margin:auto;
     overflow:hidden;
@@ -93,3 +114,49 @@ html,.bodydashboard{
     margin-top: 25px;
 }
 */
+@media(max-width:850px){
+    .sidedbardiv{
+        width:30%;
+    }
+}
+@media(max-width:650px){
+    .sidedbardiv{
+        display:none;
+        height:100%;
+        width:30%;
+    }
+    #barss{
+        display:block;
+        margin-top:2%;
+        width:5%;
+    }
+    #closebarss{
+        display:block;
+        color:white;
+        width:10%;
+    }
+    .maindashdiv{
+        width:100%;
+    }
+}
+@media(max-width:550px){
+    .sidedbardiv{
+        width:40%;
+    }
+}
+@media(max-width:500px){
+    .dashboardcontents{
+        flex-wrap:wrap;
+    }
+    .dashboardcontents div{
+        padding:4%;
+    }
+}
+@media(max-width:400px){
+    .sidedbardiv{
+        width:50%;
+    }
+    .dashboardcontents div{
+        padding:5%;
+    }
+}

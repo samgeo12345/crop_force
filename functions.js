@@ -137,4 +137,17 @@ document.addEventListener("DOMContentLoaded",function(){
             tools.style.right="15%";
         }
     }
-})
+});
+
+document.addEventListener("DOMContentLoaded",function(){
+    const barss=document.getElementById("barss");
+    const closebarss=document.getElementById("closebarss");
+    const sidebarss=document.getElementById("sidebarss");
+    barss.onclick=function(){
+        sidebarss.style.display="block";
+        sidebarss.style.position="fixed";
+    }
+    closebarss.onclick=function(){
+        sidebarss.style.display="none";
+    }
+});

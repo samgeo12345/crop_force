@@ -26,7 +26,8 @@
     </div>
 <div id="content" style="display: none;"> -->
 <div class="dashboardsetdiv">
-    <div class="sidedbardiv">
+    <div class="sidedbardiv" id="sidebarss">
+        <a href="#" id="closebarss"><i class="fas fa-xmark"></i></a>
         <figure>
             <i class="fas fa-user-circle"></i>
             <figcaption style="cursor:default;user-select: none;">User</figcaption>
@@ -40,15 +41,23 @@
         <p style="padding:1% 5%;border-radius:5px;background-color:white;color:rgb(4,189,4);" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i> Logout</p>
     </div>
     <div class="maindashdiv">
+        <a href="#" id="barss"><i class="fas fa-bars"></i></a>
+        <h1 style="color:silver;">Dashboard</h1>
         <div class="dashboardcontents">
-            <h1 style="color:silver;">Dashboard</h1>
             <div>
-                <h2><i class="fa-solid fa-cloud"></i> Weather</h2>
-                <p>day to day weather updates are shown here.</p>
+                <h2><i class="fas fa-cloud"></i> Weather</h2>
+                <p>Day to day weather updates are shown here.</p>
                 <a href="weather.html">view details></a>
+            </div>
+            <div>
+                <h2><i class="fas fa-expand"></i> Detection</h2>
+                <p>Detect plants to find any disease are done here.</p>
+                <a class="subscribes" href="weather.html">subscribe></a>
+                <span class="Rs"><i class="fas fa-indian-rupee-sign"></i> 340</span>
             </div>
         </div>
     </div>
 </div>
+<script src="functions.js"></script>
 </body>
 </html>
