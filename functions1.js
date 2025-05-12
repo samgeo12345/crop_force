@@ -90,7 +90,7 @@ function updateTime() {
     const timeString = `${String(hours).padStart(2, '0')}:${minutes} ${ampm}`;
 
     const dateString = `${day}-${month}-${year}`;
-    const dateTimeString = `Current time: ${dateString} ${timeString} IST`;
+    const dateTimeString = `${dateString} ${timeString} IST`;
 
     document.getElementById('clock').textContent = dateTimeString;
 }

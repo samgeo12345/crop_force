@@ -34,14 +34,14 @@ const apiKey = '3652485fbeff1136836d4e26e5d0557c'; // Replace with your actual A
 
                     // Combine data for display
                     const location = `${city}, ${country}`;
-                    document.getElementById('location').innerText = `Location: ${location}`;
-                    document.getElementById('temperature').innerText = `Temperature: ${temperature}`;
-                    document.getElementById('pressure').innerText = `Pressure: ${pressure}`;
-                    document.getElementById('humidity').innerText = `Humidity: ${humidity}`;
-                    document.getElementById('fog').innerText = `Fog: ${fog}`;
-                    document.getElementById('rain').innerText = `Rain Possibility: ${rain}`;
-                    document.getElementById('sunny').innerText = `Sunny: ${sunny}`;
-                    document.getElementById('weatherDescription').innerText = `Weather: ${weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1)}`;
+                    document.getElementById('location').innerText = `${location}`;
+                    document.getElementById('temperature').innerText = `${temperature}`;
+                    document.getElementById('pressure').innerText = `${pressure}`;
+                    document.getElementById('humidity').innerText = `${humidity}`;
+                    document.getElementById('fog').innerText = `${fog}`;
+                    document.getElementById('rain').innerText = `${rain}`;
+                    document.getElementById('sunny').innerText = `${sunny}`;
+                    document.getElementById('weatherDescription').innerText = `${weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1)}`;
                 })
                 .catch(error => {
                     weatherDiv.innerHTML = "Error fetching weather data.";

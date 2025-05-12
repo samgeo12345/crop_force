@@ -8,15 +8,16 @@
     <script src="functions1.js"></script>
     <script src="weather.js"></script>
     <link rel="stylesheet" href="weather.css">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="leaficon.png" type="image/x-icon">
 </head>
 <body>
-    <div class="back_home" title="Go to Dashboard">
-        <a href="dashboard.html"><i class="fa-solid fa-user fa-xl" style="color: #ffffff;margin-top: 20px;"></i>
-            <h1 style="margin-top: 5px;margin-left: 13px;">Dashboard</h1></a>
+    <div class="videodiv">
+    <video autoplay muted loop playsinline>
+        <source src="weather3.mp4" type="video/mp4">
+    </video>
     </div>
-    <div id="loader" class="loader">
+    <a class="backs_home" href="dashboard.html">< Dashboard</a>
+    <!--<div id="loader" class="loader">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -29,19 +30,46 @@
         <div class="bar10"></div>
         <div class="bar11"></div>
         <div class="bar12"></div>
+    </div>-->
+<div class="weatherheaddiv">
+    <h1>Weather Information</h1>
+    <h2 id="location">Loading...</h2>
+    <br>
+</div>
+<div id="weather">
+    <div>
+        <h2><i class="fas fa-temperature-three-quarters"></i> Temperature</h2>
+        <p id="temperature">Loading...</p>
     </div>
-<div id="content" style="display: none;">
-    <div id="weather">
-        <h2>Weather Information</h2>
-        <h3 id="location">Location: Loading...</h3>
-        <p id="temperature">Temperature: Loading...</p>
-        <p id="pressure">Pressure: Loading...</p>
-        <p id="humidity">Humidity: Loading...</p>
-        <p id="fog">Fog: Loading...</p>
-        <p id="rain">Rain Possibility: Loading...</p>
-        <p id="sunny">Sunny: Loading...</p>
-        <p id="weatherDescription">Weather: Loading...</p>
-        <div id="clock">Current time:</div>
+    <div>
+        <h2><i class="fas fa-gauge"></i> Pressure</h2>
+        <p id="pressure">Loading...</p>
     </div>
+    <div>
+        <h2><i class="fas fa-tint"></i> Humidity</h2>
+        <p id="humidity">Loading...</p>
+    </div>
+    <div>
+        <h2><i class="fas fa-smog"></i> Fog</h2>
+        <p id="fog">Loading...</p>
+    </div>
+    <div>
+        <h2><i class="fas fa-cloud-rain"></i> Rain Possibility</h2>
+        <p id="rain">Loading...</p>
+    </div>
+    <div>
+        <h2><i class="fas fa-sun"></i> Sunny</h2>
+        <p id="sunny">Loading...</p>
+    </div>
+    <div>
+        <h2><i class="fas fa-cloud"></i> Clouds</h2>
+        <p id="weatherDescription">Loading...</p>
+    </div>
+    <div>
+        <h2><i class="fas fa-clock"></i> Current Time</h2>
+        <p id="clock"></p>
+    </div>
+</div>
+<br>
 </body>
 </html>
